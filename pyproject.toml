@@ -13,41 +13,60 @@ extend-select = ["E501"]
 requires = ["setuptools>=61.0"] # Minimum version of setuptools required
 build-backend = "setuptools.build_meta" # Standard entry point for setuptools builds
 
-
 [project]
-# --- Core Package Metadata ---
-# This information describes your package for tools like pip and websites like PyPI.
-
-# The distribution name of your package.
-# This is the name used when you run 'pip install ...'. Dashes are conventional.
 name = "twinweaver"
-
-# The current version of your package.
-# It's good practice to follow semantic versioning (e.g., MAJOR.MINOR.PATCH).
 version = "0.1.0"
-
-# A short, one-sentence description of what your package does.
 description = "Converting longitudinal patient data into text for LLM-based event prediction and forecasting."
 
+# --- NEW/UPDATED FIELDS ---
+
+# 1. Readme: This content will become the description on the PyPI page.
+readme = "README.md" 
+
+# 2. Python Version: Specify which Python versions you support.
+requires-python = ">=3.8"
+
+# 3. License: Point to your license file (e.g., Apache 2.0).
+license = {file = "LICENSE"}
+
+# 4. Authors: Your contact info.
+authors = [
+  {name = "MendenLab", email = "your.email@example.com"}, 
+]
+
+# 5. Classifiers: These tags help people search for your package on PyPI.
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: Apache 2.0",
+    "Operating System :: OS Independent",
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+
+# ... keep your dependencies and optional-dependencies as they are ...
+dependencies = [
+    "numpy",
+    "pandas",
+    "transformers",
+    "scikit-learn",
+]
 
 [project.optional-dependencies]
 dev = [
     "pytest",
-    "numpy",       # We don't really care too much about specific versions for now, since we only use basic functionality
+    "numpy",
     "pandas",
     "transformers",
     "scikit-learn",
     "ruff",
 ]
 
+# 6. URLs: Links that appear on the PyPI sidebar.
+[project.urls]
+"Homepage" = "https://github.com/MendenLab/TwinWeaver"
+"Bug Tracker" = "https://github.com/MendenLab/TwinWeaver/issues"
 
-dependencies = [
-    "numpy",       # We don't really care too much about specific versions for now, since we only use basic functionality
-    "pandas",
-    "transformers",
-    "scikit-learn",
-]
-
+# ... keep the build-system, tool.ruff, tool.setuptools, and tool.pytest sections ...
 
 
 [tool.setuptools]
