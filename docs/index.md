@@ -1,8 +1,8 @@
 # TwinWeaver
 
 <p align="center">
-  <img src="images/candidate_jpg.jpg#only-light" width="25%" alt="TwinWeaver Logo" title="Title">
-  <img src="images/candidate_dark_bg_jpg.jpg#only-dark" width="25%" alt="TwinWeaver Logo" title="Title">
+  <img src="https://raw.githubusercontent.com/MendenLab/TwinWeaver/refs/heads/main/docs/images/candidate_jpg.jpg#only-light" width="25%" alt="TwinWeaver Logo" title="Title">
+  <img src="https://raw.githubusercontent.com/MendenLab/TwinWeaver/refs/heads/main/docs/images/candidate_dark_bg_jpg.jpg#only-dark" width="25%" alt="TwinWeaver Logo" title="Title">
 </p>
 
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
@@ -19,13 +19,10 @@ TwinWeaver is a longitudinal framework for LLM-based Patient Digital Twins. It s
 
 ### Install from Source
 
-To install the package, clone the repository and install it in editable mode:
+To install the package:
 
 ```bash
-git clone https://github.com/your-org/twinweaver.git
-cd twinweaver
-pip install -r requirements.txt
-pip install -e .
+pip install twinweaver
 ```
 
 For running the examples and fine-tuning workflows, install additional dependencies:

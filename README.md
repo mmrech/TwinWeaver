@@ -1,7 +1,7 @@
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="docs/images/candidate_dark_bg_jpg.jpg">
-    <source media="(prefers-color-scheme: light)" srcset="docs/images/candidate_jpg.jpg">
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/MendenLab/TwinWeaver/refs/heads/main/docs/images/candidate_dark_bg_jpg.jpg">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/MendenLab/TwinWeaver/refs/heads/main/docs/images/candidate_jpg.jpg">
     <img alt="TwinWeaver Logo" src="docs/images/candidate_jpg.jpg" width="25%" title="Title">
   </picture>
 </p>
