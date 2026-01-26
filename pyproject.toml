@@ -31,7 +31,7 @@ license = {file = "LICENSE"}
 
 # 4. Authors: Your contact info.
 authors = [
-  {name = "MendenLab", email = "your.email@example.com"}, 
+  {name = "MendenLab", email = "nikita.makarov@roche.com"}, 
 ]
 
 # 5. Classifiers: These tags help people search for your package on PyPI.
