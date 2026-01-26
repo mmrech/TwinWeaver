@@ -114,6 +114,37 @@ training_data = converter.forward_conversion(
 For complete tutorials, see the [Examples](#-examples) section below.
 
 
+### Dataset Format
+
+TwinWeaver expects three primary dataframes (or CSV files) as input. Example files can be found in [`examples/example_data/`](examples/example_data/).
+
+#### 1. Longitudinal Events (`events.csv`)
+Contains time-varying clinical data where each row represents a single event.
+
+| patientid | date | event_category | event_name | event_value | event_descriptive_name | meta_data | source |
+|:---|:---|:---|:---|:---|:---|:---|:---|
+| *Unique identifier for the patient* | *Date of the event* | *Human-readable name used in the text output*  | *(Optional) Category (e.g., `lab`, `drug`)* | *(Optional) Specific event identifier* | *Value associated with the event* | *(Optional) Additional metadata* | *(Optional) Source of the data - e.g. events or genetic* |
+
+#### 2. Patient Constants (`constant.csv`)
+Contains static patient information (demographics, baseline characteristics). One row per patient.
+
+| patientid | birthyear | gender | ... |
+|:---|:---|:---|:---|
+| *Unique identifier for the patient* | *Patient's year of birth* | *Patient's gender* | *Any other static patient attributes* |
+
+#### 3. Constant Descriptions (`constant_description.csv`)
+Maps columns in the `constant` table to human-readable descriptions for the text prompt.
+
+| variable | comment |
+|:---|:---|
+| *Name of the column in the constant table* | *Description of the variable for the text prompt* |
+
+
+
+
+
+
+
 
 ## 📚 Documentation
 
