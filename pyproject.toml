@@ -33,6 +33,10 @@ description = "Converting longitudinal patient data into text for LLM-based even
 [project.optional-dependencies]
 dev = [
     "pytest",
+    "numpy",       # We don't really care too much about specific versions for now, since we only use basic functionality
+    "pandas",
+    "transformers",
+    "scikit-learn",
 ]
 
 
